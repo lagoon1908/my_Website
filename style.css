@@ -1,0 +1,336 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color)
+}
+/*Aquí empieza el código necesario para la barra de navegación personalizada*/
+/*----------------------------------------------------------------------------*/
+li, a, button{
+    font-family:  "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between; /*si se deja esto, los botones estarán al medio*/
+    /*justify-content: flex-end; /* si se deja esto, los botones estarán a la derecha*/
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--primary-color);
+}
+.logo-image img{ /* reccuerda que tienes que especificar que se trabaja con imagenes con img*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    cursor: pointer;
+    /*margin-right: auto; /* Se debe de desactivar para que todo quede en el centro*/
+}
+nav{
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #73bee2 
+}
+
+.boton {
+    padding: 9px 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 30px;
+}
+.boton:hover{
+    background-color: var(--boton-color);
+}
+/*TEXTO
+/*----------------------------------------------------------------------------*/
+.mt1{ /*Margin top 1 */
+    margin-top: 0rem;
+}
+.titulo {/* Titulo Home screen */
+    font-family: 'Inter', sans-serif;
+    font-size: 44.9px;
+    margin-top: auto;
+    color: var(--titulo-color);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-top: -1rem;
+}
+.subTitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-top: auto;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+.subTituloLink {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    /*HOVER EFFECT*/
+    background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 1s;
+    }
+.subTituloLink:hover{
+background-size: 100% 4px;
+}
+.tituloExplicacion {/* Subtitulo Homescreen */
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
+.tituloExplicacionLink{
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: var(--link-color);
+    line-height: 1.5;
+    /*HOVER EFFECT*/
+    background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms;
+}
+.tituloExplicacionLink:hover{
+    background-size: 100% 3px;
+}
+.textoNormal { /* Expplicacion homescreen */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.libro_titulo { /* Titulo de libro leido */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: var(--secondary-color);
+    line-height: 1.2em;
+    margin-bottom: -0.5rem;
+     /*HOVER EFFECT*/
+    display:inline-block;
+   background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+   background-size: 0% 3px;
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   transition: background-size 300ms;
+}
+.libroAutor { /* Titulo de libro leido -> notas */
+    margin-top: -0.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+.libro_descripcion {/* Descripción de libro leido */
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+.nolink {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.flex-parent{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+.flex-text{
+    box-sizing: border-box;
+}
+.footerTitulo{
+    color: var(--texto-footer-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+}
+.footerTexto{
+    color: #94A3B8;
+}
+/*----------------------------------------------------------------------------*/
+.mr1{
+    margin-right: 1rem;
+}
+.mr2{
+    margin-right: 2rem;
+}
+.m2{
+    margin: 1rem;
+}
+.mb1{
+    margin-bottom: 1rem;
+}
+.mtlibro{
+    margin-top: 0.4rem;
+}
+/*----------------------------------------------------------------------------*/
+.cajaTexto{ /* el # se utiliza para crear una ID, una etiqueta o identificador para un DIV*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    /*height: 250px; */
+    background: greenyellow;
+    border-radius: 15px;   
+}
+.cajaImagen{ /*estos identificadores son únicos, porque cada caja es unica*/
+    display: flex;
+    width: 200px;
+    height: 250px; 
+    background: cyan;
+    border-radius: 15px;
+    justify-content: center;
+}
+.cajaPadre{ /* como esta entidad se va a repetir muchas veces, entonces  creo una CLASE para ella*/
+    display: flex; /*si no pongo esto, nada que sea derivado de FLEX va  afuncionar*/
+    max-width: 800px;
+    min-height: 300px;
+    background: transparent;
+    margin-bottom: 2.5rem;
+    margin-top: -1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cajaIntro{ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;/*Para centrar la caja respecto al sitio web*/
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.cajaIntro2{ 
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;/*Para centrar la caja respecto al sitio web*/
+    margin-right: auto;
+    margin-top: 2rem;
+}
+#imagenIntroduccion_day{
+    display: flex;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    margin-right: 1rem;
+    transition: transform 0.2s; 
+    margin-top: 1.46rem;
+}
+#imagenIntroduccion_day:hover{
+    transform: scale(1.07);
+    
+}
+
+.cajaLibro{ /* como esta entidad se va a repetir muchas veces, entonces  creo una CLASE para ella*/
+    display: flex; /*si no pongo esto, nada que sea derivado de FLEX va  afuncionar*/
+    width: 500px;
+    height: 310px;
+    background: var(--tarjetas-libro-color);
+    margin-bottom: 2.5rem;
+    margin-left: 2rem ;
+    margin-right: 2rem ;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    transition: 0.2s;
+    transition: background-color 0;
+}
+.cajaLibro:hover{
+    margin-top: -.5rem;
+    margin-bottom: 3rem;
+}
+.cajaSubtitulo{
+    display: flex;  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    flex-direction: row;
+}
+/*Code for card hovering*/
+/* https://www.youtube.com/watch?v=UqEmFSlx4ps  */
+
+/*COLORES*/
+/*----------------------------------------------------------------------------*/
+#iconoDarkmode{
+    cursor: pointer;
+}
+:root {
+   --primary-color: white;
+    --secondary-color: #15171A;
+   --boton-color: rgba(115, 190, 226,1);
+   --tarjetas-libro-color:linear-gradient(180deg, white, white,white,#b1b1b1);
+   --titulo-color: rgba(15, 23, 42, 1);
+   --box-shadow-color:rgba(0, 0, 0, 0.5);
+   --global-underline-color: #3897D3;
+   --link-color: #3897D3;
+   --footer-color: #80c8ff;
+   --titulo-footer-color: #475569;
+   --texto-footer-color: #94A3B8;
+}
+.dark-theme{
+   --primary-color: #191919;
+   --secondary-color: #ffffff;
+   --boton-color: #73bee2;
+   --tarjetas-libro-color: linear-gradient(180deg, #2e2e2e,#070707);
+   --titulo-color: #ffffff;
+   --box-shadow-color:rgba(0, 0, 0, 0.5);
+   --global-underline-color: #80c8ff;
+   --link-color: #80c8ff;
+   --footer-color: #0f0f0f;
+   --titulo-footer-color: #475569;
+   --texto-footer-color: #94A3B8;
+}
+.coffe-theme {
+    --primary-color: #ffe8cd;
+    --secondary-color: #8e7258;
+   --boton-color: rgba(115, 190, 226,1);
+   --tarjetas-libro-color:#ffe8cd;
+   --titulo-color: #77583b;
+   --tarjetas-libro-color: linear-gradient(180deg, #ffe8cd, #ffe8cd,  #ffe8cd, rgba(44, 44, 44, 0.15));
+   --box-shadow-color:rgba(0, 0, 0, 0.5);
+   --link-color: #77583b;
+   --global-underline-color: #80c8ff;
+   --footer-color: #75583d;
+   --titulo-footer-color: #475569;
+   --texto-footer-color: #94A3B8;
+}
+/*----------------------------------------------------------------------------*/
