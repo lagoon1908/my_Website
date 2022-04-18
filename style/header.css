@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color)
+}
+/*Aquí empieza el código necesario para la barra de navegación personalizada*/
+/*----------------------------------------------------------------------------*/
+li, a, button{
+    font-family:  "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between; /*si se deja esto, los botones estarán al medio*/
+    /*justify-content: flex-end; /* si se deja esto, los botones estarán a la derecha*/
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--primary-color);
+}
+.logo-image img{ /* reccuerda que tienes que especificar que se trabaja con imagenes con img*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    cursor: pointer;
+    /*margin-right: auto; /* Se debe de desactivar para que todo quede en el centro*/
+}
+nav{
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #73bee2 
+}
+
+.boton {
+    padding: 9px 25px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 30px;
+}
+.boton:hover{
+    background-color: var(--boton-color);
+}

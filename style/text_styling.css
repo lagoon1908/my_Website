@@ -1,0 +1,144 @@
+/*TEXTO
+/*----------------------------------------------------------------------------*/
+.mt1{ /*Margin top 1 */
+    margin-top: 0rem;
+}
+.mr1{
+    margin-right: 1rem;
+}
+.mr2{
+    margin-right: 2rem;
+}
+.m2{
+    margin: 1rem;
+}
+.mb1{
+    margin-bottom: 1rem;
+}
+.mtlibro{
+    margin-top: 0.4rem;
+}
+
+/*----------------------------------------------------------------------------*/
+.titulo {/* Titulo Home screen */
+    font-family: 'Inter', sans-serif;
+    font-size:  40px;
+    margin-top: auto;
+    color: var(--titulo-color);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.subTitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-top: auto;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+.subTituloLink {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    /*HOVER EFFECT*/
+    background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 1s;
+    }
+.subTituloLink:hover{
+background-size: 100% 4px;
+}
+.tituloExplicacion {/* Subtitulo Homescreen */
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    font-weight: 100;
+    color: var(--secondary-color);
+    line-height: 1.2;
+}
+.tituloExplicacionLink{
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: var(--link-color);
+    line-height: 1.5;
+    /*HOVER EFFECT*/
+    background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms;
+}
+.tituloExplicacionLink:hover{
+    background-size: 100% 3px;
+}
+.textoNormal { /* Expplicacion homescreen */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.libro_titulo { /* Titulo de libro leido */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: var(--secondary-color);
+    line-height: 1.2em;
+    margin-bottom: -0.5rem;
+     /*HOVER EFFECT*/
+    display:inline-block;
+   background-image: linear-gradient(var(--global-underline-color),var(--global-underline-color));
+   background-size: 0% 3px;
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   transition: background-size 300ms;
+}
+.libroAutor { /* Titulo de libro leido -> notas */
+    margin-top: -0.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+.libro_descripcion {/* Descripción de libro leido */
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+.nolink {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.flex-parent{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+.flex-text{
+    box-sizing: border-box;
+}
+.footerTitulo{
+    color: var(--texto-footer-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+}
+.footerTexto{
+    color: #94A3B8;
+}

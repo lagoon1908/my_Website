@@ -1,0 +1,199 @@
+:root{
+    --global-radius: 20px;
+    --global-radius-responsive: 10px;
+    --global-padding: 20px;
+    --max-width:390px;
+    --max-height:350px;
+    --padding-top-bottom:10px;
+    --global-space: transparent;
+   }
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr minmax(5px 100px) minmax(5px 100px) 1fr;
+    grid-auto-rows: .1fr .1fr .1fr .5fr .5fr .5fr .5fr; 
+        grid-template-areas: 
+        "nav nav nav nav "
+        "hello hello hello hello"
+        "space profile description space2 "
+        "space content content2 space2 "
+        "space content content2 space2 "
+        "space content content2 space2 "
+        "footer footer footer footer";
+        justify-items: center;
+}
+#footer{
+    grid-area: footer;
+    height: 25px;
+    height: 50px;
+    justify-self: center;
+    background: blue;
+    background: transparent;
+}
+.footerTitulo{
+    height: 25px;
+    height: 50px;
+    text-align: center;
+}
+
+#nav{
+    grid-area: nav;
+    height: 50px;
+    background: cyan;
+    box-shadow: none;
+}
+#hello{
+    grid-area: hello;
+    height: 80px;
+    justify-self: center;
+    background: none;
+    box-shadow: none;
+}
+#profile{
+    justify-self: end;
+    grid-area: profile;
+    max-width: 200px;
+    height: auto;
+    background: transparent;
+}
+#profile img{
+    max-width: 200px;
+    height: auto;
+    border-radius: var(--global-radius);
+}
+#description{
+    grid-area: description;
+    max-width: 391px;
+    height: auto;
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+   justify-self: start;
+   background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#profilePicture{
+    float: left;
+    max-width: 200px;
+    height: auto;
+    border-radius: var(--global-radius);
+    margin-right: 1rem;
+}
+#about{
+    grid-area: about;
+    max-width: var(--max-width);
+    height: auto;
+    justify-self: end;
+    border-radius: var(--global-radius);
+    padding: var(--global-padding);
+    background-color: var(--global-cards-color);
+    background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    align-content: center;
+    justify-content: center;
+}  
+#aboutImage{
+    max-width: 80px;
+    height: 80px;
+    border-radius: var(--global-radius);
+}
+#proyects{
+    grid-area: proyects;
+    max-width: 390px;
+    height: auto;
+    justify-self: start;
+    border-radius: var(--global-radius);
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+#proyectImage{
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--global-radius);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    
+}
+#books{
+    grid-area: books;
+    max-width: var(--max-width);
+    max-height: 344px;
+    justify-self: end;
+    border-radius: var(--global-radius);
+    padding: var(--global-padding);
+    background-color: var(--global-cards-color);
+}
+#notes{
+    grid-area: notes;
+    max-width: var(--max-width);
+    height: 272px;
+    justify-self: start;
+    border-radius: var(--global-radius);
+    padding: var(--global-padding);
+    background-color: var(--global-cards-color);
+}
+#social{
+    grid-area: social;
+    max-width: var(--max-width);
+    height: 172px;
+    border-radius: var(--global-radius);
+    padding: var(--global-padding);
+    align-self: start;
+    background-color: var(--global-cards-color);
+}
+#space{
+    background: var(--global-space);
+    grid-area: space;
+}
+#space2{
+    background: var(--global-space);
+    grid-area: space2;
+}
+#space3{
+    background: var(--global-space);
+    grid-area: space3;
+}
+#content{
+    grid-area: content;
+    max-width: 391px;
+    height: auto;
+    padding: 0;
+
+    align-self:flex-start;
+    justify-self: end;
+}
+#content2{
+    grid-area: content2;
+    max-width: 391px;
+    height: auto;
+    padding: 0;
+    justify-self: start;
+}
+
+#caja1{
+    background: palevioletred;
+    max-width: 391px;
+    max-height: 200px;
+    margin: 12px;
+}
+#caja2{
+    background: orange;
+    max-width: 391px;
+    max-height: 200px;
+    margin: 12px;
+}
+.contentColumn{
+    display: flex; 
+    flex-direction: column;
+}
+.contentRow{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+

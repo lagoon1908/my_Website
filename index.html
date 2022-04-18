@@ -4,7 +4,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="style.css"><!-- This part is important!-->
+        <!-- LIBRERIAS PARA DAR ESTTILO-->
+        <link rel="stylesheet" href="style/box.css">
+        <link rel="stylesheet" href="style/colors.css">
+        <link rel="stylesheet" href="style/grid.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/home_grid.css">
+        <link rel="stylesheet" href="style/responsive.css">
+        <link rel="stylesheet" href="style/text_styling.css">
+        <!-- ------------------------- -->
         <title>Fernando Mejia</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +20,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="imagenes/Logo_30px.png" />
 </head>
+<!------------------------------------------------------------------------------------------------>
  <header>
     <a href="index.html" >
         <img  src="imagenes/logo_2.png" width="60px" class="logo-image" alt="logo">
     </a>
          <nav>
-             <!--POR EL MOMENTO, NO TENGO BARRA DE NAVEGACIÓN-->
-              <!--
-             <ul class="nav__links">
-                 <li><a href="#">Acerca de</a></li>
-                 <li><a href="#">Notas</a></li>
-                 <li><a href="#">Proyectos</a></li>
-                 <li><a href="#">Otros</a></li>
-             </ul>
-            -->
             <button class="boton" id="iconoDarkmode">
                 <svg  id="moon" width="24" height="24" viewBox="0 0 20 20" fill="#15171A">
                   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -35,49 +35,93 @@
                 </svg>
             </button> 
          </nav>
-         <script src="script.js"></script><!--NO MOVER TIENE QUE ESTAR AQUI PARA QUE FUNCIONE EL NIGHT MODE -->
-        </header>
-<!--Introduccion-->
-<!----------------------------  <img id="imagenIntroduccion"  src="imagenes/fer_light.jpg"> --------------------------------------------------------->
+    <script src="script.js"></script>
+    </header>
 <body>
    
-        <div class="cajaIntro" style="margin-bottom: -3rem;">
-    <h1 class="titulo">👋 Hola, soy Fernando</h1>
-     <div class="cajaPadre">
-             <img id="imagenIntroduccion_day"  src="imagenes/fer_light.jpg" style="scale: .8; margin-top: -.1rem;">
-
-        <div>
-          <h1 class="tituloExplicacion">
-            Ingeniero mecatrónico mexicano 🇲🇽 de intercambio en alemania 🇩🇪.
-            Aparte de ser estudiante, me gusta aprender distintas cosas en mi tiempo libre.
-            Actualmente estoy aprendiendo a programar en HTML para hacer este sitio web! Sígueme
-             en <a class="tituloExplicacionLink " href="https://www.linkedin.com/feed/">LinkedIn</a>.</h1> <br>
-             <a class="tituloExplicacionLink mr2" style="margin-left: 1rem;" href="about.html">Sobre mí →</a>
-             <a class="tituloExplicacionLink mr2" href="proyectos.html">Otros Proyectos →</a> 
-             
+    <div class="container">
+        <div id="nav"></div> 
+        <h1   id="hello" class="titulo">👋 Hola, soy Fernando</h1>
+        <div id="profile">
+            <img src="imagenes/profile.jpg" id="profilePicture" ></div>
+        <div id="description" class="contentRow">    
+            <h1 class="libroAutor">
+                        Ingeniero mecatrónico mexicano 🇲🇽 de intercambio en alemania 🇩🇪.
+                        Aparte de ser estudiante, me gusta aprender distintas cosas en mi tiempo libre.
+                        Actualmente estoy aprendiendo a programar en HTML para hacer este sitio web! </h1>
         </div>
+        <div id="content">
+            <div class="contentColumn">
+                <div class="flexAbout">
+                    <img src="imagenes/cerebro.png" id="aboutImage" >
+                    <p class="libroAutor" >Conoce más sobre mí</p> 
+                    <p class="libroAutor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, rem aperiam velit eveniet eos ipsam temporibus accusantium maxime amet omnis!</p>                
+                </div>
+                <div class="flexBooks" style="flex-wrap: wrap;">
+                    <p class="libroAutor"> 👑 Mi top 3</p>
+                    <img src="imagenes/flow.png" id="aboutImage" >
+                </div>
+
+            </div>
+        </div>  
+        <div id="content2">
+            <div class="contentColumn">
+                <div class="flexProyects" style="background-image: url('tree.png');">
+                    <p class="libroAutor">Otros proyectos</p>
+                </div>
+                <div class="flexNotes">
+                    <p class="libroAutor">📝 Notas de libros</p> <br>
+                    <p class="libro_titulo nolink" style="font: size 19px;">Can't hurt me</p>               
+                </div>
+                <div class="flexSocials">
+                    <p class="libroAutor">Donde me puedes encontrar 👇</p>               
+                </div>
+            </div>
+        </div>
+        <div id="footer"><p class="footerTitulo" >CREADOR: FERNANDO MEJIA LAGUNA<br></div>
+        <div id="space"></div>
+        <div id="space2"></div>
         
     </div>
-    </div>
-<!------------------------------------------------------------------------------------->
-<!--Seccion de resumenes  -->
-<!------------------------------------------------------------------------------------->
-    
-        <div class="cajaIntro" style="margin-bottom: 1rem;" >
-        <h1><li><a href="libros.html" class="subTituloLink " >Libros que me gustaron y regalaría a alguien más.</a></li>
-
-        <h1> <li><a href="libros.html" class="subTituloLink " >Otros proyectos</a></li>
-
-        <h1><li><a href="libros.html" class="subTituloLink " >Sobre mí</a></li>
-
-        <h1> <li><a href="libros.html" class="subTituloLink " >Descargar CV</a></li>
-        </div>
-
- <!------------------------------------------------------------------------------------->
 </body>
-<footer>
-    <div class="footerTexto" >
-        <p  style="text-align: center;" class="footerTitulo" >CREADOR: FERNANDO MEJIA LAGUNA<br>
-    </div>
-</footer>
 </html>
+  <!--
+    <div id="content">
+        <div class="content1flex">
+            <div class="caja1"></div>
+            <div class="caja2"></div>
+            <div class="caja3"></div>
+    </div>  
+    <div id="content2">
+        <div class="content2flex">
+            
+        </div>
+    </div>
+    -->
+            <!--
+            <div id="about">
+                <div class="flexAbout">
+                    <img src="imagenes/cerebro.png" id="aboutImage" >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae autem porro. Natu</p>               
+                </div>
+            </div> 
+            <div id="proyects">
+                <img src="imagenes/pixelTree.png" id="proyectImage" >
+            </div>   
+            <div id="books">
+                <div class="flexAbout">
+                    <img src="imagenes/cerebro.png" id="aboutImage" >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae autem porro. Natu</p>
+                </div>
+            </div>   
+            <div id="notes">
+                <p>📝 Notas de libros</p>
+            </div>   
+            <div id="social">
+                social
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae autem porro. Natus animi vel similique tenetur fugit voluptates eos deserunt rem consequatur, laboriosam nesciunt reiciendis quod voluptatibus blanditiis! Earum, ducimus quisquam! Non expedita est saepe nisi ratione porro commodi iure.</p>
+            
+            </div>
+           
+            </div> 
+            -->

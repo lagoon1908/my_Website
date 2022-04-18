@@ -1,0 +1,160 @@
+
+.cajaTexto{ /* el # se utiliza para crear una ID, una etiqueta o identificador para un DIV*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    /*height: 250px; */
+    background: greenyellow;
+    border-radius: 15px;   
+}
+.cajaImagen{ /*estos identificadores son únicos, porque cada caja es unica*/
+    display: flex;
+    width: 200px;
+    height: 250px; 
+    background: cyan;
+    border-radius: 15px;
+    justify-content: center;
+}
+.cajaPadre{ /* como esta entidad se va a repetir muchas veces, entonces  creo una CLASE para ella*/
+    display: flex; /*si no pongo esto, nada que sea derivado de FLEX va  afuncionar*/
+    max-width: 800px;
+    min-height: 300px;
+    background: transparent;
+    margin-bottom: 2.5rem;
+    margin-top: -1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cajaIntro{ 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;/*Para centrar la caja respecto al sitio web*/
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.cajaIntro2{ 
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;/*Para centrar la caja respecto al sitio web*/
+    margin-right: auto;
+    margin-top: 2rem;
+}
+#imagenIntroduccion_day{
+    display: flex;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    transition: transform 0.2s; 
+}
+#imagenIntroduccion_day:hover{
+    transform: scale(1.07);
+    
+}
+
+.cajaLibro{ /* como esta entidad se va a repetir muchas veces, entonces  creo una CLASE para ella*/
+    display: flex; /*si no pongo esto, nada que sea derivado de FLEX va  afuncionar*/
+    width: 500px;
+    height: 310px;
+    background: var(--tarjetas-libro-color);
+    margin-bottom: 2.5rem;
+    margin-left: 2rem ;
+    margin-right: 2rem ;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    transition: 0.2s;
+    transition: background-color 0;
+}
+.cajaLibro:hover{
+    margin-top: -.5rem;
+    margin-bottom: 3rem;
+}
+.cajaSubtitulo{
+    display: flex;  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    flex-direction: row;
+}
+/*----------------------------------*/
+.flexAbout{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+    max-height: 200px;
+    background-color: rgb(5, 200, 200);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+    
+} 
+.flexBooks{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+    max-height: 350px;
+    background-color: rgb(97, 66, 222);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+
+} 
+.flexProyects{
+        max-width: var( --max-width);
+        height: 160px;
+    background-color: rgb(152, 52, 235);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+} 
+.flexNotes{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+        height: 160px;
+    background-color: rgb(171, 40, 101);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+
+} 
+.flexSocials{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+        height: 130px;
+    background-color: rgb(219, 191, 31);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-libro-color);
+    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    padding:var(--global-padding);
+} 
+/*Code for card hovering*/
+/* https://www.youtube.com/watch?v=UqEmFSlx4ps  */
