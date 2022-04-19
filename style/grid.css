@@ -11,7 +11,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr minmax(5px 100px) minmax(5px 100px) 1fr;
-    grid-auto-rows: .1fr .1fr .1fr .5fr .5fr .5fr .5fr; 
+    grid-auto-rows: .1fr .1fr .1fr .5fr .5fr .5fr .1fr; 
         grid-template-areas: 
         "nav nav nav nav "
         "hello hello hello hello"
@@ -27,8 +27,6 @@
     height: 25px;
     height: 50px;
     justify-self: center;
-    background: blue;
-    background: transparent;
 }
 .footerTitulo{
     height: 25px;
@@ -64,7 +62,7 @@
 #description{
     grid-area: description;
     max-width: 391px;
-    height: auto;
+    max-height: 100px;
     padding: 0px;
     background: none;
     box-shadow: none;
@@ -74,18 +72,20 @@
     padding:var(--global-padding);
     margin-left: 10px;
     margin-right: 10px;
+    max-height: 300px;
+    border-radius: var(--global-radius);
 }
 #profilePicture{
     float: left;
     max-width: 200px;
-    height: auto;
+    max-height: 200px;
     border-radius: var(--global-radius);
     margin-right: 1rem;
 }
 #about{
     grid-area: about;
     max-width: var(--max-width);
-    height: auto;
+    max-height: 200px;
     justify-self: end;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
@@ -97,13 +97,13 @@
 }  
 #aboutImage{
     max-width: 80px;
-    height: 80px;
+    max-height: 80px;
     border-radius: var(--global-radius);
 }
 #proyects{
     grid-area: proyects;
     max-width: 390px;
-    height: auto;
+    max-height: 200px;
     justify-self: start;
     border-radius: var(--global-radius);
     padding: 0;
@@ -111,8 +111,8 @@
     box-shadow: none;
 }
 #proyectImage{
-    max-width: 100%;
-    height: auto;
+    max-width: 390px;
+    max-height: 390px;
     border-radius: var(--global-radius);
     box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
     
@@ -120,7 +120,7 @@
 #books{
     grid-area: books;
     max-width: var(--max-width);
-    max-height: 344px;
+    max-height: var(--max-width);
     justify-self: end;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
@@ -129,7 +129,7 @@
 #notes{
     grid-area: notes;
     max-width: var(--max-width);
-    height: 272px;
+    max-height: 272px;
     justify-self: start;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
@@ -138,7 +138,7 @@
 #social{
     grid-area: social;
     max-width: var(--max-width);
-    height: 172px;
+    max-height: 172px;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
     align-self: start;
