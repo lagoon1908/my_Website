@@ -5,14 +5,10 @@ icon.onclick = function(){
     if(document.body.classList.contains("dark-theme")){
         document.getElementById("moon").style.display = 'none';
         document.getElementById("sun").style.display = 'block';
-        document.getElementById("profilePicture").src = 'imagenes/profileDark.jpg';
-        document.getElementById("flecha").src = 'imagenes/flecha_2.png';
     }
     else{
       document.getElementById("sun").style.display = 'none';
       document.getElementById("moon").style.display = 'block';
-      document.getElementById("profilePicture").src = 'imagenes/profile.jpg';
-      document.getElementById("flecha").src = 'imagenes/flecha.jpeg';
       }
  }
 document.getElementById("moon").style.display = 'block';

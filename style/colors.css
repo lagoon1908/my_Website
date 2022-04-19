@@ -6,9 +6,9 @@
 :root {
    --primary-color:linear-gradient(#f5f7fa , #c3cfe2);
     --secondary-color: #15171A;
-   --boton-color: rgba(115, 190, 226,1);
+    --boton-dark-Mode: transparent;
    --tarjetas-libro-color:linear-gradient(180deg, white, white,white,#b1b1b1);
-   --titulo-color: rgba(15, 23, 42, 1);
+   --titulo-color: #0f172a;
    --box-shadow-color:rgba(0, 0, 0, 0.5);
    --global-underline-color: #3897D3;
    --link-color: #3897D3;
@@ -16,12 +16,14 @@
    --titulo-footer-color: #475569;
    --texto-footer-color: #94A3B8;
    --tarjetas-home:white;
+   --boton-color: #EDEDED;
+
 }
 .dark-theme{
-   --primary-color: linear-gradient(319deg, #00fffbce -50%, rgba(18, 18, 18,.5) 50%), 
+   --primary-color: linear-gradient(350deg, #00a2ffa6 -100%, rgba(18, 18, 18,.5) 50%), 
    linear-gradient(25deg, #6ca5ef -5%, #121212 40%);
    --secondary-color: #ffffff;
-   --boton-color: #73bee2;
+   --boton-dark-Mode: transparent;
    --tarjetas-libro-color: linear-gradient(180deg, #2e2e2e,#070707);
    --titulo-color: #ffffff;
    --box-shadow-color:rgba(0, 0, 0, 0.5);
@@ -30,11 +32,13 @@
    --footer-color: #0f0f0f;
    --titulo-footer-color: #475569;
    --texto-footer-color: #94A3B8;
+   --tarjetas-home:#070707;
 }
+/*
 .coffe-theme {
-    --primary-color: #ffe8cd;
-    --secondary-color: #8e7258;
-   --boton-color: rgba(115, 190, 226,1);
+   --primary-color: #ffe8cd;
+   --secondary-color: #8e7258;
+   --boton-dark-Mode: transparent;
    --tarjetas-libro-color:#ffe8cd;
    --titulo-color: #77583b;
    --tarjetas-libro-color: linear-gradient(180deg, #ffe8cd, #ffe8cd,  #ffe8cd, rgba(44, 44, 44, 0.15));

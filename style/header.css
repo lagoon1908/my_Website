@@ -51,7 +51,7 @@ nav{
     color: #73bee2 
 }
 
-.boton {
+.botonDarkMode {
     padding: 9px 25px;
     background-color: transparent;
     border: none;
@@ -60,6 +60,28 @@ nav{
     transition: all 0.3s ease 0s;
     margin-left: 30px;
 }
-.boton:hover{
+.botonDarkMode:hover{
+    background-color: var(--boton-dark-Mode);
+}
+.boton{
     background-color: var(--boton-color);
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+}
+.socialBoton{
+    background-color: var(--boton-color);
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    max-width: 100%;
+    padding-left: 1.25rem; 
+    padding-right: 1.25rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; 
+    align-items: center;
 }
