@@ -4,7 +4,7 @@
     cursor: pointer;
 }
 :root {
-   --primary-color: white;
+   --primary-color:linear-gradient(#f5f7fa , #c3cfe2);
     --secondary-color: #15171A;
    --boton-color: rgba(115, 190, 226,1);
    --tarjetas-libro-color:linear-gradient(180deg, white, white,white,#b1b1b1);
@@ -15,9 +15,11 @@
    --footer-color: #80c8ff;
    --titulo-footer-color: #475569;
    --texto-footer-color: #94A3B8;
+   --tarjetas-home:white;
 }
 .dark-theme{
-   --primary-color: #191919;
+   --primary-color: linear-gradient(319deg, #00fffbce -50%, rgba(18, 18, 18,.5) 50%), 
+   linear-gradient(25deg, #6ca5ef -5%, #121212 40%);
    --secondary-color: #ffffff;
    --boton-color: #73bee2;
    --tarjetas-libro-color: linear-gradient(180deg, #2e2e2e,#070707);

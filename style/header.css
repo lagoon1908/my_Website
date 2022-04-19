@@ -1,8 +1,13 @@
 body{
     box-sizing: border-box;
+    background-size:cover;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color)
+    background: var(--primary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 /*Aquí empieza el código necesario para la barra de navegación personalizada*/
 /*----------------------------------------------------------------------------*/
@@ -19,7 +24,6 @@ header {
     /*justify-content: flex-end; /* si se deja esto, los botones estarán a la derecha*/
     align-items: center;
     padding: 30px 10%;
-    background-color: var(--primary-color);
 }
 .logo-image img{ /* reccuerda que tienes que especificar que se trabaja con imagenes con img*/
     border-radius: 50%;

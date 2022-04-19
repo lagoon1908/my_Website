@@ -25,8 +25,8 @@
 #footer{
     grid-area: footer;
     height: 25px;
-    height: 50px;
     justify-self: center;
+    align-self:stretch;
 }
 .footerTitulo{
     height: 25px;
@@ -61,17 +61,13 @@
 }
 #description{
     grid-area: description;
-    max-width: 391px;
+    max-width: 370px;
     max-height: 100px;
     padding: 0px;
-    background: none;
-    box-shadow: none;
-   justify-self: start;
-   background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    justify-self: start;
+    /*box-shadow: 0px 5px 20px 2px var(--box-shadow-color);*/
     padding:var(--global-padding);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
     max-height: 300px;
     border-radius: var(--global-radius);
 }
@@ -89,9 +85,6 @@
     justify-self: end;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
-    background-color: var(--global-cards-color);
-    background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
     align-content: center;
     justify-content: center;
 }  
@@ -102,20 +95,17 @@
 }
 #proyects{
     grid-area: proyects;
-    max-width: 390px;
-    max-height: 200px;
+        width: 390px;
+        height: 200px;
     justify-self: start;
     border-radius: var(--global-radius);
     padding: 0;
-    background: none;
     box-shadow: none;
 }
 #proyectImage{
-    max-width: 390px;
-    max-height: 390px;
+        width: 390px;
+        height: 390px;
     border-radius: var(--global-radius);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
-    
 }
 #books{
     grid-area: books;
@@ -124,7 +114,7 @@
     justify-self: end;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
-    background-color: var(--global-cards-color);
+    box-sizing: border-box;
 }
 #notes{
     grid-area: notes;
@@ -133,7 +123,6 @@
     justify-self: start;
     border-radius: var(--global-radius);
     padding: var(--global-padding);
-    background-color: var(--global-cards-color);
 }
 #social{
     grid-area: social;
@@ -142,7 +131,6 @@
     border-radius: var(--global-radius);
     padding: var(--global-padding);
     align-self: start;
-    background-color: var(--global-cards-color);
 }
 #space{
     background: var(--global-space);

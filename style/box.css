@@ -91,8 +91,8 @@
     border-radius: var(--global-radius);
     margin-bottom:var( --padding-top-bottom);
     margin-top:var( --padding-top-bottom);
-    background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
     padding:var(--global-padding);
     
 } 
@@ -103,23 +103,21 @@
     justify-items: center;
     max-width: var( --max-width);
     max-height: 350px;
-    background-color: rgb(97, 66, 222);
     border-radius: var(--global-radius);
     margin-bottom:var( --padding-top-bottom);
     margin-top:var( --padding-top-bottom);
-    background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
     padding:var(--global-padding);
 
 } 
 .flexProyects{
         max-width: var( --max-width);
         height: 160px;
-    background-color: rgb(152, 52, 235);
     border-radius: var(--global-radius);
     margin-bottom:var( --padding-top-bottom);
     margin-top:var( --padding-top-bottom);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
     padding:var(--global-padding);
     background-size: cover;
     align-items: center;
@@ -136,8 +134,8 @@
     border-radius: var(--global-radius);
     margin-bottom:var( --padding-top-bottom);
     margin-top:var( --padding-top-bottom);
-    background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
     padding:var(--global-padding);
 
 } 
@@ -152,8 +150,22 @@
     border-radius: var(--global-radius);
     margin-bottom:var( --padding-top-bottom);
     margin-top:var( --padding-top-bottom);
-    background: var(--tarjetas-libro-color);
-    box-shadow: 0px 10px 20px 2px var(--box-shadow-color);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+} 
+.flexFotter{
+    display: flex; 
+    align-items: flex-end;
+    justify-items: center;
+    max-width: var( --max-width);
+        height: 130px;
+    background-color: rgb(219, 191, 31);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
     padding:var(--global-padding);
 } 
 /*Code for card hovering*/

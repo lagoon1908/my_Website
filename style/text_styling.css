@@ -137,8 +137,19 @@ background-size: 100% 4px;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     letter-spacing: -0.05em;
-    font-weight: 600;
+    font-weight: 200;
+    color: #ffffff;
 }
 .footerTexto{
-    color: #94A3B8;
+    color: var(--texto-footer-color);
 }
+.textoHome{
+    font-family: "Inter",-apple-system,system-ui,"Helvetica Neue","Helvetica", BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell, "Open Sans",sans-serif;
+    font-size: 16px;
+}
+.textoHomeLink{
+    font-family: "Inter",-apple-system,system-ui,"Helvetica Neue","Helvetica", BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell, "Open Sans",sans-serif;
+    font-size: 16px;
+    color: var(--link-color);
+}
+
