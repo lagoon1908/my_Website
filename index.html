@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="style/text_styling.css">
         <!-- ------------------------- -->
         <title>Fernando Mejia</title>
+        <!--AWESOME FONT-->
+        <script src="https://kit.fontawesome.com/ba1a5f5229.js" crossorigin="anonymous"></script>
+         <!-- ------------------------- -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,7 +26,7 @@
 <link rel="icon" href="imagenes/Logo_30px.png" />
 </head>
 <!------------------------------------------------------------------------------------------------>
- <header>
+<header>
     <a href="index.html" >
         <img  src="imagenes/logo_2.png" width="60px" class="logo-image" alt="logo">
     </a>
@@ -38,16 +41,17 @@
             </button> 
          </nav>
     <script src="script.js"></script>
-    </header>
+</header>
 <body>
     <div class="container">
         <div id="nav"></div> 
         <h1   id="hello" class="titulo">👋 Hola, soy Fernando</h1>
         <div id="profile">
-            <img src="imagenes/profilePixel.png" id="profilePicture" ></div>
+            <img src="imagenes/profilePixel.png" id="profilePicture" >
+        </div>
         <div id="description" class="contentRow">    
             <p class="textoHome">
-                        Ingeniero mecatrónico, estudiante, 🇲🇽.</p>
+                        Ingeniero mecatrónico, estudiante, 🇲🇽 </p>
         </div>
         <div id="content">
             <div class="contentColumn">
@@ -56,38 +60,62 @@
                     <p class="textoHome">Estudiante de ingeniería mecatrónica. Siempre trato
                         de aprender cosas nuevas, conoce <a class="textoHomeLink" href="about.html">más sobre mí.</a></p>
                                   
-                </div>
-                <div class="flexBooks" style="flex-wrap: wrap;">
-                    <p class="libroAutor"> 👑 Mi top 3</p>
-                    <img src="imagenes/steveJobs.png" id="profilePicture" >
+                </div> 
+                <div class="flexBooks ">
+                    <p class="titulosCartasHome"> 👑 Mi top 3</p>
+                    <div class="relativeImagesFather">
+                        <div class="absoluteImages1">
+                            <img src="imagenes/surelyYouAreJokingMrFeynman.png" id="homeBooksTop3" >
+                        </div>
+                        
+                        <div class="absoluteImages3">
+                            <img src="imagenes/steveJobs.png" id="homeBooksTop3">
+                        </div>
+                        <div class="absoluteImages2">
+                            <img src="imagenes/12Rules.png" id="homeBooksTop3">
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>   
         <div id="content2">
             <div class="contentColumn">
-                <div class="flexProyects" style="background-image: url('imagenes/ballena_larga.png');">
-                    <p class="libroAutor">Otros proyecto</p>
-                    <p class="textoHome">Actualmente estoy aprendiendo a programar en HTML para hacer este sitio web!</p>
-                </div>
                 <div class="flexNotes">
-                    <p class="libroAutor">📝 Notas de libros</p> <br>
-                    <a class="tituloHomeLink" href="https://www.craft.do/s/RkA00aHSYIytxv" >Can't hurt me</a>             
+                    <p class="titulosCartasHome">📝 Notas de libros</p> 
+                    <div class="divisionNotas"></div><br>
+                    <a class="tituloHomeLink" style="margin-bottom: 0rem;" href="https://www.craft.do/s/RkA00aHSYIytxv" >Can't hurt me</a> 
+                    <div><p class="textoHome">
+                        ¿Cómo sería tu vida si no tuvieras tanto miedo de hacer las cosas?
+                        ¿Cómo serīa tu vida si no pudieras fallar?
+                        ¿Cómo sería tu vida si pudieras hacer cosas que pensabas imposibles?
+                        ¿Crees que alguien pueda correr con las piernas rotas?
+                    </p></div>
+                    <a class="boton"  href="notas.html" style="margin-top: .75rem;">
+                        <div class="socialBoton" >
+                            <i class="fa-solid fa-bookmark"></i>
+                            <div><p class="textoHome" style="margin-left: .5rem;"> Notas de libros</p></div>
+                        </div>                        
+                    </a>                 
+                </div>
+                <div class="flexProyects" style="background-image: url('imagenes/ballena_larga.png');">
+                    <div class="divTransparente"></div>
+                    <p class="textoHomeProyectos">Actualmente estoy aprendiendo a programar en HTML para hacer este sitio web!
+                        Ve mis <a class="textoHomeLink" href="proyectos.html">otros proyectos.</a>
+                    </p>
                 </div>
                 <div class="flexSocials">
-                    <p class="libroAutor"style="box-sizing: border-box; text-align: center;">Donde me puedes encontrar 👇</p>
+                    <p class="titulosCartasHome"style="text-align: center;">Donde me puedes encontrar 👇</p>
                     <a class="boton" href="https://twitter.com/Mejia_1908">
                         <div class="socialBoton" >
-                            <!-- TWITTER button style="box-sizing: border-box; display: flex; flex-flow: column nowrap; align-items: stretch; justify-content: center;"-->
-                            <svg stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#121212" viewBox="0 0 24 24" style="box-sizing: border-box; width: 18px; height: 18px; position: relative; flex: 0 0 auto;"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z"></path></svg>
-                            <div><p class="textoHome" style="margin-left: .5rem;">Sígueme en Twitter.</p></div>
+                            <i class="fa-brands fa-twitter"></i>
+                            <div><p class="textoHome" style="margin-left: .5rem;">Sígueme en Twitter</p></div>
                         </div>                        
                     </a>      
-                    <a class="boton" href="https://www.linkedin.com/in/mejiafernando/" style="margin-top: .75rem;">
+                    <a class="boton"  href="https://www.linkedin.com/in/mejiafernando/" style="margin-top: .75rem;">
                         <div class="socialBoton" >
-                            <!-- TWITTER button style="box-sizing: border-box; display: flex; flex-flow: column nowrap; align-items: stretch; justify-content: center;"-->
-                            <svg stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#121212" viewBox="0 0 24 24" style="box-sizing: border-box; width: 18px; height: 18px; position: relative; flex: 0 0 auto;"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z"></path></svg>
-                            <div><p class="textoHome" style="margin-left: .5rem;">Sígueme en LinkedIn.</p></div>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div><p class="textoHome" style="margin-left: .5rem;">Sígueme en LinkedIn</p></div>
                         </div>                        
                     </a>     
                 </div>

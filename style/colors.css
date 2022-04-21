@@ -17,6 +17,7 @@
    --texto-footer-color: #94A3B8;
    --tarjetas-home:white;
    --boton-color: #EDEDED;
+   --divisor-notas-Home: rgba(0, 0, 0,.2);
 
 }
 .dark-theme{
@@ -33,6 +34,8 @@
    --titulo-footer-color: #475569;
    --texto-footer-color: #94A3B8;
    --tarjetas-home:#070707;
+   --boton-color: rgba(237, 237, 237,.4);
+   --divisor-notas-Home: rgba(255, 255, 255, 0.2);
 }
 /*
 .coffe-theme {

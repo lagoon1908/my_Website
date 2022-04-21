@@ -50,12 +50,13 @@
 #profile{
     justify-self: end;
     grid-area: profile;
-    max-width: 200px;
+    max-width: 1000px;
     height: auto;
-    background: transparent;
 }
-#profile img{
-    max-width: 200px;
+#profilePicture{
+    align-self: flex-end;
+    justify-self: end;
+    width: 200px;
     height: auto;
     border-radius: var(--global-radius);
 }
@@ -65,19 +66,11 @@
     max-height: 100px;
     padding: 0px;
     justify-self: start;
-    /*box-shadow: 0px 5px 20px 2px var(--box-shadow-color);*/
     padding:var(--global-padding);
-    margin-left: 5px;
     max-height: 300px;
-    border-radius: var(--global-radius);
+
 }
-#profilePicture{
-    float: left;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: var(--global-radius);
-    margin-right: 1rem;
-}
+
 #about{
     grid-area: about;
     max-width: var(--max-width);
@@ -89,8 +82,8 @@
     justify-content: center;
 }  
 #aboutImage{
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 70px;
+    max-height: 70px;
     border-radius: var(--global-radius);
 }
 #proyects{
@@ -160,19 +153,6 @@
     padding: 0;
     justify-self: start;
 }
-
-#caja1{
-    background: palevioletred;
-    max-width: 391px;
-    max-height: 200px;
-    margin: 12px;
-}
-#caja2{
-    background: orange;
-    max-width: 391px;
-    max-height: 200px;
-    margin: 12px;
-}
 .contentColumn{
     display: flex; 
     flex-direction: column;
@@ -183,5 +163,144 @@
     align-items: center;
     align-content: center;
 }
+#homeBooksTop3{
+    max-width: 100px;
+    height: auto;
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,1);
+    border-radius: 15px;
+}
+/*----------------------------------*/
+.flexAbout{
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+    height:auto;
+    background-color: rgb(5, 200, 200);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+    
+} 
+.flexBooks{
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: var( --max-width);
+    min-height: 200px;
+    height:auto;
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding-top: 20px;
+} 
+.relativeImagesFather{
+    box-sizing: border-box;
+    position: relative;
+    width: 270px;
+    min-height: 230px;
+}
+
+.absoluteImages1{
+    position: absolute;
+    top: 13%;
+    right: 57%;
+    text-align: center;
+    transform: rotate(-7deg);
+}
+
+.absoluteImages2{
+    position: absolute;
+    top: 7%;
+    right: 0%;
+    text-align: center;
+    transform: rotate(8deg);
+}
+.absoluteImages3{
+    position: absolute;
+    top: 1%;
+    right: 28%;
+    text-align: center;
+}
+
+.flexProyects{
+    box-sizing: border-box;
+    max-width: var( --max-width);
+    height:auto;
+    border-radius: var(--global-radius);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+    margin-bottom:var( --padding-top-bottom);
+    background-size: cover;
+    align-items: stretch;
+    justify-items: flex-end;
+    /*position: absolute;*/
+} 
+.divTransparente{
+    height: 5rem;
+    background:transparent;
+}
+.flexNotes{
+    box-sizing: border-box;
+    height:auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
+    justify-items: center;
+    max-width: var( --max-width);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+}
+.divisionNotas{
+    justify-self: stretch;
+    height: 3px;
+    max-width: 10000;
+    margin-top: -12px;
+    border-top: dotted 2px;
+    color: var(--divisor-notas-Home);
+
+}
+.flexSocials{
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
+    justify-items: center;
+    max-width: var( --max-width);
+    height:auto;
+    background-color: rgb(219, 191, 31);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+} 
+.flexFotter{
+    box-sizing: border-box;
+    display: flex; 
+    align-items: flex-end;
+    justify-items: center;
+    max-width: var( --max-width);
+    height:auto;
+    background-color: rgb(219, 191, 31);
+    border-radius: var(--global-radius);
+    margin-bottom:var( --padding-top-bottom);
+    margin-top:var( --padding-top-bottom);
+    background: var(--tarjetas-home);
+    box-shadow:0px 12px 30px -10px rgba(0,0,0,0.08);
+    padding:var(--global-padding);
+} 
+/*Code for card hovering*/
+/* https://www.youtube.com/watch?v=UqEmFSlx4ps  */
 
 
