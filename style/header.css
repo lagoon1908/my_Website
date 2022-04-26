@@ -64,7 +64,7 @@ nav{
     background-color: var(--boton-dark-Mode);
 }
 .boton{ /* En las barras de navegacio4n */
-    background-color: var(--boton-color);
+    background-color: transparent;
     height: 42px;
     border: none;
     border-radius: 12px;
